@@ -1,5 +1,4 @@
-import { ReactNode } from "react";
-import React from "react-native";
+import React, { ReactNode } from "react";
 import { Text as RNText, TextProps as RNTextProps } from "react-native";
 import * as globalStyles from "../../style/global";
 
