@@ -6,6 +6,7 @@
 
 function loadStories() {
   require('../src/components/Byline/__stories__/Byline.story');
+  require('../src/components/NewsItem/__stories__/NewsItem.story');
   require('../src/components/SmallText/__stories__/SmallText.story');
   require('../src/components/Text/__stories__/Text.story');
   require('../src/components/Thumbnail/__stories__/Thumbnail.story');
@@ -15,6 +16,7 @@ function loadStories() {
 
 const stories = [
   '../src/components/Byline/__stories__/Byline.story',
+  '../src/components/NewsItem/__stories__/NewsItem.story',
   '../src/components/SmallText/__stories__/SmallText.story',
   '../src/components/Text/__stories__/Text.story',
   '../src/components/Thumbnail/__stories__/Thumbnail.story',
