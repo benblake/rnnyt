@@ -8,6 +8,7 @@ function loadStories() {
   require('../src/components/Byline/__stories__/Byline.story');
   require('../src/components/SmallText/__stories__/SmallText.story');
   require('../src/components/Text/__stories__/Text.story');
+  require('../src/components/Thumbnail/__stories__/Thumbnail.story');
   require('../src/components/Title/__stories__/Title.story');
   
 }
@@ -16,6 +17,7 @@ const stories = [
   '../src/components/Byline/__stories__/Byline.story',
   '../src/components/SmallText/__stories__/SmallText.story',
   '../src/components/Text/__stories__/Text.story',
+  '../src/components/Thumbnail/__stories__/Thumbnail.story',
   '../src/components/Title/__stories__/Title.story',
   
 ];
