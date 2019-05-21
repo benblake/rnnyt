@@ -19,4 +19,7 @@ export const COMMON_STYLES = StyleSheet.create({
     color: TEXT_COLOR,
     fontFamily: "Helvetica Neue",
   },
+  pageContainer: {
+    flex: 1,
+  },
 });

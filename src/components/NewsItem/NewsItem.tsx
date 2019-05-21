@@ -5,7 +5,7 @@ import { Byline } from "../Byline/Byline";
 import { SmallText } from "../SmallText/SmallText";
 import { Thumbnail } from "../Thumbnail/Thumbnail";
 
-interface Props {
+export interface Props {
   author: string;
   date: Date;
   index: number;
