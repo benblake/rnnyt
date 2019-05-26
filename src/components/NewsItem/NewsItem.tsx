@@ -15,9 +15,14 @@ export interface Props {
   imageUrl?: string;
   location?: string;
   style: ViewStyle;
+  url: string;
 }
 
 export class NewsItem extends PureComponent<Props, never> {
+  public static defaultProps = {
+    url: "",
+  };
+
   public render() {
     const {
       style,
@@ -27,6 +32,7 @@ export class NewsItem extends PureComponent<Props, never> {
       date,
       location,
       description,
+      onPress,
     } = this.props;
 
     const accentColor =
@@ -35,7 +41,7 @@ export class NewsItem extends PureComponent<Props, never> {
       ];
 
     return (
-      <TouchableOpacity style={style}>
+      <TouchableOpacity style={style} onPress={onPress}>
         <View>
           <Thumbnail
             url={imageUrl || ""}
