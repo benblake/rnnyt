@@ -18,10 +18,10 @@ const Container = ({ children, style, ...rest }: Props) => {
 storiesOf("Byline", module).add("all types", () => (
   <View style={{ flex: 1, alignItems: "center" }}>
     <Container>
-      <Byline date={new Date()} author="Hugh Jass" location="Springfield" />
+      <Byline date={"some date"} author="Hugh Jass" location="Springfield" />
     </Container>
     <Container style={{ backgroundColor: "#000000" }}>
-      <Byline date={new Date()} author="Hugh Jass" location="Springfield" />
+      <Byline date={"some date"} author="Hugh Jass" location="Springfield" />
     </Container>
   </View>
 ));

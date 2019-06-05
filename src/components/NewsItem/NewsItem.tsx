@@ -7,14 +7,14 @@ import { Thumbnail } from "../Thumbnail/Thumbnail";
 
 export interface Props {
   author: string;
-  date: Date;
-  index: number;
-  onPress: () => void;
+  date: string;
+  index?: number;
+  onPress?: () => void;
   title: string;
   description?: string;
   imageUrl?: string;
   location?: string;
-  style: ViewStyle;
+  style?: ViewStyle;
   url: string;
 }
 

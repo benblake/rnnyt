@@ -4,7 +4,7 @@ import * as globalStyles from "../../style/global";
 import { SmallText } from "../SmallText/SmallText";
 
 interface Props {
-  date: Date;
+  date: string;
   author: string;
   location?: string;
 }
@@ -13,11 +13,11 @@ export const Byline = ({ date, author, location }: Props) => {
   return (
     <View>
       <View style={styles.row}>
-        <SmallText>{date.toLocaleDateString()}</SmallText>
+        <SmallText>{date}</SmallText>
         <SmallText>{author}</SmallText>
       </View>
 
-      {location && (
+      {!!location && (
         <View style={styles.row}>
           <SmallText style={styles.location}>{location}</SmallText>
         </View>

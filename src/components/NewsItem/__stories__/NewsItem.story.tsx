@@ -8,7 +8,7 @@ storiesOf("NewsItem", module).add("all types", () => (
   <View style={{ flex: 1, alignItems: "center" }}>
     <NewsItem
       author="Shandy B"
-      date={new Date()}
+      date="some date"
       index={0}
       onPress={() => {
         Alert.alert("onPress", "onPress clicked");
@@ -19,7 +19,7 @@ storiesOf("NewsItem", module).add("all types", () => (
     />
     <NewsItem
       author="Shandy B"
-      date={new Date()}
+      date="some date"
       index={0}
       onPress={() => {
         Alert.alert("onPress", "onPress clicked");

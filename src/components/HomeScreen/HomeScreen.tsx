@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Text, View } from "react-native";
-import { NewsFeed } from "../NewsFeed/NewsFeed";
+import NewsFeedContainer from "../../containers/NewsFeedContainer";
+import SearchContainer from "../../containers/SearchContainer";
 import { TabBar } from "./components";
 
 interface State {
@@ -30,9 +31,9 @@ export class HomeScreen extends Component<{}, State> {
 
     switch (tab) {
       case tabs[0]:
-        return <NewsFeed />;
+        return <NewsFeedContainer />;
       case tabs[1]:
-        return <Text>Search</Text>;
+        return <SearchContainer />;
       case tabs[2]:
         return <Text>Bookmarks</Text>;
       default:

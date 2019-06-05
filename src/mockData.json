@@ -1,0 +1,32 @@
+{
+  "results": [
+    {
+      "title": "Google’s Shadow Work Force: Temps Who Outnumber Full-Time Employees",
+      "abstract": "The tech company has long used contractors, but some employees worry that a growing reliance on them represents a shifting, less admirable work culture.",
+      "url": "https://www.nytimes.com/2019/05/28/technology/google-temp-workers.html",
+      "byline": "By DAISUKE WAKABAYASHI",
+      "published_date": "2019-05-28T02:00:04-04:00",
+      "geo_facet": ["Menlo Park, California"],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2019/05/03/business/00googtvc1/00googtvc1-thumbLarge.jpg",
+          "format": "thumbLarge"
+        }
+      ]
+    },
+    {
+      "title": "Huawei Ban Threatens Wireless Service in Rural Areas",
+      "abstract": "Many small carriers depend on inexpensive equipment from the Chinese company. Now they must rethink expansion plans, and perhaps replace existing gear.",
+      "url": "https://www.nytimes.com/2019/05/25/technology/huawei-rural-wireless-service.html",
+      "byline": "By CECILIA KANG",
+      "published_date": "2019-05-25T05:00:12-04:00",
+      "geo_facet": ["China"],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2019/05/23/business/00rural1-sub-promo/00rural1-sub-thumbLarge-v3.jpg",
+          "format": "thumbLarge"
+        }
+      ]
+    }
+  ]
+}

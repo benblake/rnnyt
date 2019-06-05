@@ -15,6 +15,7 @@ import { SmallText } from "../SmallText/SmallText";
 interface Props {
   news: NewsItemProps[];
   listStyle?: ViewStyle;
+  loadNews?: () => void;
 }
 
 interface State {
@@ -24,23 +25,17 @@ interface State {
 
 export class NewsFeed extends PureComponent<Props, State> {
   public static defaultProps = {
-    news: Array(10).fill({
-      author: "Shandy B",
-      date: new Date(),
-      index: 0,
-      style: {},
-      onPress: () => {},
-      title: "Levi the dbag",
-      imageUrl:
-        "https://avatars1.githubusercontent.com/u/17188936?s=400&u=cfea6044dcd4e480dc8ca09f7c73e1996e116e54&v=4",
-      url: "https://www.cbc.ca/",
-    }),
+    showLoadingSpinner: true,
   };
 
   public state: State = {
     modalVisible: false,
     modalUrl: "",
   };
+
+  public componentWillMount() {
+    this.refresh();
+  }
 
   public render() {
     const { news } = this.props;
@@ -61,6 +56,12 @@ export class NewsFeed extends PureComponent<Props, State> {
       </View>
     );
   }
+
+  private refresh = () => {
+    if (this.props.loadNews) {
+      this.props.loadNews();
+    }
+  };
 
   private renderModal = () => {
     return (
